@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+    <record id="action_datetime_picker" model="ir.actions.client">
+        <field name="name">Datetime Picker</field>
+        <field name="tag">action_datetime_picker</field>
+    </record>
+
+    <menuitem id="menu_datetime_picker_root" name="Datetime Picker" sequence="20">
+        <menuitem id="menu_datetime_picker" name="Datetime Picker" action="action_datetime_picker"/>
+    </menuitem>
+</data>
+</odoo>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+<t t-name="UsingDateTimePicker" owl="1">
+    <div class="vh-100 overflow-auto bg-muted p-5">
+        <h1 class="text-center mb-5">Datetime Picker</h1>
+        <div class="container bg-secondary">
+          <div class="p-5 row">
+            <div class="form-group col-md-6">
+              <label>Datetime Picker Browser Native</label>
+              <DatePicker date="date" t-on-datetime-changed="onDateChange" minDate="minDate"/>
+              <!--<input type="datetime-local" class="form-control" id="dtBrowser"/>-->
+            </div>
+            <div class="form-group col-md-6">
+              <label>Datetime Picker jquery-datetimepicker plugin</label>
+              <DateTimePicker date="date" t-on-datetime-changed="onDateTimeChange"/>
+              <!--<div class="input-group" id="datetimepicker1">
+                <input class="form-control" id="dtVendor" placeholder="mm.dd.yyyy hh:mm am/pm" />
+                <span class="input-group-append input-group-addon">
+                  <span class="input-group-text">
+                    <i class="fa fa-calendar"></i>
+                  </span>
+                </span>
+              </div>-->
+            </div>
+          </div>
+
+          <div class="row p-5">
+              <div class="col-sm-6">
+                <div class="form-group">
+                    <div class="input-group date" id="datetimepicker3" data-target-input="nearest">
+                        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker3"/>
+                        <div class="input-group-append" data-target="#datetimepicker3" data-toggle="datetimepicker">
+                            <div class="input-group-text"><i class="fa fa-clock-o"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</t>
+</templates>
